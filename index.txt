@@ -1,0 +1,3 @@
+Task list:
+1.create log
+2.create bug
