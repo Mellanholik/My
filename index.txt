@@ -1,3 +1,6 @@
 Task list:
 1.create log
+logo
+togo
+rogo
 2.create bug
