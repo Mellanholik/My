@@ -1,0 +1,15 @@
+h1 {
+    color: green;
+    
+}
+.first {
+    background: no-repeat url(849b636ec25a4f8badbf66acfff2d0c7.jpg)
+}
+p.second {  
+    background-image: url(download.jpg);
+    background-repeat: repeat;
+    background-size: contain;
+}
+div{
+    background-color: yellow;
+}
