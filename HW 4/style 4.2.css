@@ -9,7 +9,9 @@ p.second {
     background-image: url(download.jpg);
     background-repeat: repeat;
     background-size: contain;
+    width: max-content;
 }
 div{
     background-color: yellow;
+    width: max-content;
 }
