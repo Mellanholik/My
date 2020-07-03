@@ -1,0 +1,51 @@
+p:first-letter {
+    color: red;
+    font-size: 30px;
+}
+body {
+    width: 600px;
+    text-align: justify;
+}
+em {
+    background-color: green;
+    color: white;
+}
+
+ol.red li {
+    color: red;
+}
+h1 {
+    color: orange;
+    text-align: right;
+}
+h2 {
+    color: orange;
+}
+
+h3 {
+    color: blue;
+    font-size: 24px;
+}
+.gray {
+    color: gray;
+}
+.green {
+    color: green;
+}
+tr td:nth-child(1) {
+    color: orange;
+    background-color: white;
+    text-align: left;
+}
+td {
+    background-color: green;
+}
+table {
+    text-align: center;
+    width: 400px;
+}
+td, th, table {
+    border: 1px solid black;
+    border-spacing: 0px;
+
+}
