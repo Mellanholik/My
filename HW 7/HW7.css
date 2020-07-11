@@ -1,0 +1,30 @@
+.navigation {
+    background-color: #1d749d;
+}
+
+a {
+    float: left;
+}
+
+.float-link {
+    float: right;
+}
+
+a, .float-link {
+    color: white;
+    background-color: #48a7e4;
+    text-decoration: none;
+    padding: 20px;
+    font-family: sans-serif;
+}
+
+a:hover {
+    background-color: #d4d4d4;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
