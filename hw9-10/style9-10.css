@@ -46,6 +46,10 @@ li {
 }
 nav li, footer li {
     display: inline-block;
+    margin-right: -4px;
+}
+footer li {
+    padding: 0px 45px;
 }
 a, .rights {
     display: block;
@@ -69,7 +73,6 @@ menu a {
 }
 footer a {
     color: #2c2c2c;
-    padding: 0px 45px;
 }
 .a1 {
     padding-left: 25px;
