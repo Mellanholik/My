@@ -1,0 +1,112 @@
+body {
+    background-color: #f9f9f9;
+    margin: 0px;
+}
+
+.main-conteiner {
+    width: 1060px;
+    height: 950px;
+    box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
+    margin: 0px auto;
+    border: 0px black solid;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2c2c2c;
+}
+.logo {
+    margin: 50px 45px 36px 45px;
+}
+.main-conteiner nav {
+    display: flex;
+    width: 968px;
+    height: 40px;
+    background-image: linear-gradient(to top, #444343, #5e5e5e);
+    color: #ffffff;
+    margin: auto;
+    font-size: 15px;
+    text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.5);
+}
+li {
+    list-style-type: none;
+}
+a {
+    display: block;
+    text-decoration: none;
+}
+nav a {
+    padding: 0px 25px;
+    line-height: 40px;
+    color: white;
+}
+nav a:hover {
+    background-image: linear-gradient(to top, #2e2e2e, #4a4a4a);
+}
+.content-body {
+    display: flex;
+    width: 966px;
+    margin: 40px auto 0px;
+}
+menu {
+    list-style-type: none;
+    padding: 0px;
+    margin: 0px;
+}
+menu li {
+    width: 238px;
+    border: solid 1px #c8c8c8;
+    background-color: #ffffff;
+}
+menu a {
+    padding:0px 10px;
+    text-indent: 10px;
+    line-height: 39px;
+    font-size: 13px;
+    text-align-last: left;
+    color: #656363;
+}
+menu a:hover {
+    color: #2c2c2c;
+    text-indent: 30px;
+}
+footer {
+    display: flex;
+    width: 966px;
+    background-image: linear-gradient(to bottom, #e1e1e1, #e1e1e1), linear-gradient(to top, #444343, #5e5e5e);
+    margin: 60px auto 20px;
+}
+footer li {
+    line-height: 40px;
+}
+footer a:nth-of-type(1) {
+    margin-left: 25px;
+}
+footer li.rights  {
+    padding:0px 20px;
+    margin-left: auto;
+}
+footer a {
+    margin:0px 50px;
+    font-size: 13px;
+    color: #2c2c2c;
+}
+footer a:hover {
+    text-decoration: underline;
+}
+.img-box {
+    border: 1px solid #c8c8c8;
+    padding: 47px 89px;
+    margin-left: 50px;
+    margin-bottom: 39px;
+}
+div.text-box {
+    width: 966px;
+    display: flex;
+    margin: 0px auto;
+    flex-direction: row-reverse;
+}
+.text-box p {
+    width: 625px;
+    margin: 0px;
+    margin-right: 29px;
+    font-size: 13px;
+    line-height: 1.62;
+}
