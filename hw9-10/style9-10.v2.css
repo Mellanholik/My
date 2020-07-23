@@ -5,12 +5,13 @@ body {
 
 .main-conteiner {
     width: 1060px;
-    height: 950px;
     box-shadow: 0px 5px 5px 0px rgba(0, 0, 0, 0.3);
     margin: 0px auto;
     border: 0px black solid;
     font-family: Arial, Helvetica, sans-serif;
     color: #2c2c2c;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
 }
 .logo {
     margin: 50px 45px 36px 45px;
@@ -71,7 +72,7 @@ footer {
     display: flex;
     width: 966px;
     background-image: linear-gradient(to bottom, #e1e1e1, #e1e1e1), linear-gradient(to top, #444343, #5e5e5e);
-    margin: 60px auto 20px;
+    margin: 60px auto 0px;
 }
 footer li {
     line-height: 40px;
