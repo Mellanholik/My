@@ -24,8 +24,8 @@ nav, .content-body {
     margin-top: 40px;
 }
 nav {
-    height: 40px;
     background-image: linear-gradient(to top, #444343, #5e5e5e);
+    border: 1px solid transparent;
 }
 menu {
     position: relative;
@@ -63,6 +63,8 @@ nav a {
     color: #fff;
     text-shadow: 0.5px 0.9px 1px rgba(0, 0, 0, 0.5);
     font-size: 15px;
+    outline: 1px solid transparent;
+
 }
 menu a {
     border: 1px solid #c8c8c8;
@@ -80,6 +82,7 @@ footer a {
 
 nav a:hover {
     background-image: linear-gradient(to top, #2e2e2e, #4a4a4a);
+    outline-color: #5e5e5e;
 }
 menu a:hover {
     color:#2c2c2c;

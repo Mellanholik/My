@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&subset=cyrillic');
+body {
+    background: url(404-bg-image.jpg) fixed no-repeat;
+    background-size: cover;
+    margin: 0;
+    font-family: 'Open Sans';
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p, input, ::placeholder, button {
+    color: white;
+}
+p {
+    margin: 0px;
+    line-height: 48px;
+}
+.error-404 {
+    text-align: center;
+}
+.aa p {
+    font-size: 12.75rem;
+}
+.under-text {
+    margin-top: 48px;
+    font-size: 20px;
+    line-height: 48px;
+}
+input {
+    background-color: transparent;
+    border: 1px solid white;
+    font-size: 15px;
+    width: 570px;
+    height: 70px;
+    padding: 0px 40px;
+    box-sizing: border-box;
+    margin-right: -4px;
+    margin-top: 30px;
+}
+input:focus {
+    outline-color: white;
+}
+input::-webkit-search-cancel-button{
+    -webkit-appearance: none;
+    content: url(1.png);
+    width: 10px;
+    height: 10px;
+}
+button {
+    height: 70px;
+    border: 1px solid #2a233d;
+    background-color: #2a233d;
+    width: 168px;
+    box-sizing: border-box;
+    margin-left: 30px;
+}
+button:hover {
+    background-color: #1C172B;
+    cursor: pointer;
+}
+.back-link {
+    font-size: 15px;
+    font-style: italic;
+    color: #ffe600;
+    font-weight: 600px;
+    text-decoration: none;
+}
+.back-link:hover {
+    text-decoration: underline;
+}
+
