@@ -4,11 +4,13 @@ body {
     font-family: 'Open Sans';
     color: white;
     background-color: #2e3b4e;
+    
 }
 .conteiner {
     height: 100vh;
-    background: url(pex-header-bg.jpg) local no-repeat;
+    background: url(pex-header-bg.jpg) fixed no-repeat;
     background-size: 100%;
+    background-position-y: -155px;
 }
 .conteiner header {
     display: flex;
