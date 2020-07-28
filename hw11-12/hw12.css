@@ -67,6 +67,9 @@ header .search-bar input:focus, .search-bar button:focus {
 header button:hover {
     cursor: pointer;
 }
+
+
+}
 header .search-bar input {
     text-indent: 22px;
 }
@@ -77,6 +80,7 @@ header .search-bar {
     flex-shrink: 0px;
     border-radius: 22px;
     border: 1px solid #f2f2f2;
+    padding: 0px 8px;
 }
 header input::-webkit-search-cancel-button{
     -webkit-appearance: none;
