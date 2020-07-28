@@ -32,7 +32,8 @@ input {
     background-color: transparent;
     border: 1px solid white;
     font-size: 15px;
-    width: 570px;
+    width: 30vw;
+    min-width: 500px;
     height: 70px;
     padding: 0px 40px;
     box-sizing: border-box;
