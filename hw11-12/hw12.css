@@ -86,12 +86,12 @@ main {
     flex-direction: column;
     height: 100%;
     width: 40%;
-
 }
 .main-content {
     margin: auto 0 auto auto;
     text-align: right;
     flex-shrink: 0;
+    transform: translate(0px, -80px);
 }
 main .h1 {
     font-size: 50px;
@@ -123,6 +123,9 @@ main p {
 .conteiner-bottom-box {
     width: 950px;
     margin: auto;
+}
+main p:first-child {
+    margin-top: 80px;
 }
 
 .conteiner-bottom footer {
