@@ -68,8 +68,10 @@ header .search-box {
     box-sizing: border-box;
     padding-left: 3px;
     margin-right: 35px;
+    flex-shrink: 0;
 }
 header .search-box input, .search-box button  {
+    padding: 0px;
     border: none;
 }
 header .search-box input {
@@ -78,6 +80,7 @@ header .search-box input {
 }
 header .search-box button {
     background-color: #fff;
+    
 }
 header .search-box button:hover {
     cursor: pointer;
