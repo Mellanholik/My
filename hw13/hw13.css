@@ -277,13 +277,13 @@ header .search-box input::-webkit-search-cancel-button {
 }
 .avatar img  {
     position: absolute;
-    top:79%;
-    left:50%;
-    transform:translate(-50%,-50%);
+    top: -10%;
+    left: -80%;
     width:128px;
     height:84px;
     object-fit:cover;
 }
 .avatar-box {
     display: flex;
+
 }

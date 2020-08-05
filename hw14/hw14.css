@@ -1,0 +1,102 @@
+.products-list {
+    max-width: 900px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.product {
+    box-sizing: border-box;
+    margin:0px 5px;
+    overflow: hidden;
+    width: 210px;
+}
+img {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    object-fit:cover;
+}
+.product-img {
+    position: relative;
+    height: 250px;
+    width: 210px;
+    overflow: hidden;
+}
+.last {
+    height: 120%;
+    width: 120%;
+    transform: translateX(-16%);
+    
+}
+.product-content {
+    display: none;
+    position: absolute;
+    width: 210px;
+    text-align: center;
+    z-index: 1;
+    background-color: white;
+    
+}
+.product-content ul {
+    list-style-type: none;
+    padding: 0px;
+    display: flex;
+    justify-content: center;
+}
+.product-content ul li {
+    display: inline-block;
+}
+.product-content ul li a {
+    display: block;
+    background-color: #727272;
+    border-radius: 100%;
+    margin: 0px 2px;
+    padding: 5px;
+    transition-property: background-color;
+    transition-duration: 300ms;
+}
+.product-content ul li a i {
+    transform: translateY(1px);
+}
+.product-content ul li a:hover {
+    background-color: #00c8c8;
+}
+.product-content p{
+    font-size: 11px;
+    width: 185px;
+    margin: 10px auto;
+    font-family: 'Roboto', sans-serif; 
+}
+.product .product-content p:nth-child(1) {
+    color: #727272;
+    font-weight: bold;
+    font-size: 10px;
+    text-transform: uppercase;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.product-content-img img {
+    width: 45px;
+    height: auto;
+    display: none;
+    border: 1px solid white;
+    background-color: white;
+}
+.product-content-img img:nth-child(1) {
+    top: 5px;
+    right: 10px;
+}
+.product-content-img img:nth-child(2) {
+    top: 70px;
+    right: 10px;
+}
+
+.product:hover .product-content, .product:hover .product-content-img img  {
+    display: block;
+
+}
+.product:hover, .product:hover .product-content {
+    box-shadow: -1px 2px 9px -1px rgba(173,164,173,1);
+    
+}
