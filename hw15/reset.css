@@ -53,3 +53,9 @@ button {
 	border: none;
 	outline: none;
 }
+input {
+	background-color: transparent;
+	border: none;
+	outline: none;
+	padding: 0;	
+}
