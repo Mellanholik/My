@@ -17,7 +17,7 @@ body {
 button {
     transition: box-shadow 200ms linear;
 }
-button:hover {
+button:hover:not(.no-shadow) {
     box-shadow: 10px 13px 5px -10px rgba(0,0,0,0.75);
 }
 .inf-width2 {
@@ -627,7 +627,7 @@ button:hover {
     text-align: left;
     color: #848e97;
 }
-@media all and (max-width: 630px){
+@media all and (max-width: 700px){
     .in-container {
         flex-direction: column;
         width: 100%;
@@ -828,6 +828,7 @@ button:hover {
        margin-left: 0px;
        display: none;
    }
+
    .conteiner-header {
        margin-left: 32px;
        margin-right: 28px;
