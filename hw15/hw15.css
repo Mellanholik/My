@@ -631,7 +631,7 @@ button:hover:not(.no-shadow) {
     text-align: left;
     color: #848e97;
 }
-@media all and (max-width: 1190px){
+@media all and (max-width: 1220px){
     .in-container {
         flex-direction: column;
         width: 100%;
@@ -735,8 +735,12 @@ button:hover:not(.no-shadow) {
     }
     .pracing-container__prac-blocks {
         flex-wrap: wrap;
+        padding-left: 30px;
+        padding-right: 30px;
     }
     .prac-block {
+        min-width: 257px;
+        width: 35%;
         margin-top: 14px;
     }
     .footer-container__inf {
@@ -770,29 +774,6 @@ button:hover:not(.no-shadow) {
         margin-right: 19px;
         margin-left: 19px;
     }
-}
-@media all and (max-width: 700px){
-    .prac-block:hover {
-        transform: scale(1);
-        background-color: rgba(255, 255, 255, 0.11);
-    }
-    button:hover {
-        box-shadow: none !important;
-    }
-    
-    /* .prac-block:nth-last-child(2) {
-        width: 299px;
-        height: 560px;
-        background-color: #00000031;
-    }
-    .prac-block:nth-last-child(2) h4 {
-        background-color: #00000011;
-    }
-    .prac-block:nth-last-child(2) button {
-        width: 190px;
-        height: 52px;
-        border-radius: 25px;
-    } */
     .pracing-container p.source-sans-pro {
         margin: 0px 59px;
         margin-top: 41px;
@@ -822,7 +803,32 @@ button:hover:not(.no-shadow) {
         margin-left: 35px;
         margin-right: 35px;
     }
-
+    .subscribe-box__email {
+        margin-left: 0px;
+    }
+}
+@media all and (max-width: 700px){
+    .prac-block:hover {
+        transform: scale(1);
+        background-color: rgba(255, 255, 255, 0.11);
+    }
+    button:hover {
+        box-shadow: none !important;
+    }
+    
+    /* .prac-block:nth-last-child(2) {
+        width: 299px;
+        height: 560px;
+        background-color: #00000031;
+    }
+    .prac-block:nth-last-child(2) h4 {
+        background-color: #00000011;
+    }
+    .prac-block:nth-last-child(2) button {
+        width: 190px;
+        height: 52px;
+        border-radius: 25px;
+    } */
     .conteiner-header nav {
         order: 3;
         width: 35px;
