@@ -59,6 +59,9 @@ button:hover:not(.no-shadow) {
     line-height: 0.94;
     margin: 14px;
 }
+.conteiner-header nav i {
+    display: none;
+}
 .conteiner-header button {
     width: 145px;
     height: 38px;
@@ -820,9 +823,13 @@ button:hover:not(.no-shadow) {
        order: 3;
        width: 35px;
        height: 30px;
-       background-image: url(https://www.festivalclaca.cat/imgfv/b/4-43869_hamburger-menu-icon-png-menu-icon-png.png);
+       /* background-image: url(https://www.festivalclaca.cat/imgfv/b/4-43869_hamburger-menu-icon-png-menu-icon-png.png); */
        background-size: cover;
        margin-left: 0px;
+   }
+   .conteiner-header nav i {
+       display: block;
+       font-size: 30px;
    }
    .conteiner-header button {
        order: 2;
@@ -872,7 +879,6 @@ button:hover:not(.no-shadow) {
     }
     .underheader .container .button button {
         width: 300px;
-        
     }
     .underheader .container .button {
         left: calc(50% - 150px);
