@@ -629,6 +629,13 @@ button:hover:not(.no-shadow) {
     color: #848e97;
 }
 @media all and (max-width: 700px){
+    .prac-block:hover {
+        transform: scale(1);
+        background-color: rgba(255, 255, 255, 0.11);
+    }
+    button:hover {
+        box-shadow: none !important;
+    }
     .in-container {
         flex-direction: column;
         width: 100%;
