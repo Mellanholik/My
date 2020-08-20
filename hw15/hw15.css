@@ -14,6 +14,12 @@ body {
     max-width: 1100px;
     margin: auto;
 }
+button {
+    transition: box-shadow 200ms linear;
+}
+button:hover {
+    box-shadow: 10px 13px 5px -10px rgba(0,0,0,0.75);
+}
 .inf-width2 {
     max-width: 878px;
     margin: auto;
@@ -872,8 +878,57 @@ body {
     .conteiner-header nav {
         width: 30px;
         height: 25px;
+        margin-left: auto;
     }
     .right-side {
         margin: 0px 50px;
+    }
+    .conteiner-header button {
+        position: fixed;
+        border-radius: 100%;
+        width: 70px;
+        height: 70px;
+        line-height: 1.5;
+        bottom: 25px;
+        right: 25px;
+        z-index: 100;
+    }
+    .container-header__bottom-bg {
+        position: fixed;
+        bottom: 15px;
+        right: 15px;
+        /* background-color: white; */
+        background-color: #8d81ac9f;
+        width: 90px;
+        height: 90px;
+        border-radius: 100%;
+        z-index: 90;
+        animation: container-header__bottom-bg 1.5s infinite alternate linear ;
+    }
+    .container-header__bottom-bg2 {
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        /* background-color: white; */
+        background-color: #8d81ac70;
+        width: 100px;
+        height: 100px;
+        border-radius: 100%;
+        z-index: 80;
+        animation: container-header__bottom-bg 4s infinite alternate linear ;
+    }
+    @keyframes container-header__bottom-bg {
+        0% {
+            transform: scale(1.1);
+        }
+        33% {
+            transform: scale(1);
+        }
+        66% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(0.8);
+        }
     }
 }
