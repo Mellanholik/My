@@ -402,6 +402,7 @@ button:hover:not(.no-shadow) {
     flex-direction: column;
     flex-shrink: 0;
     text-transform: uppercase;
+    transition: transform 400ms;
 }
 .prac-block:hover {
     transform: scale(1.15);
