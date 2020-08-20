@@ -735,7 +735,7 @@ button:hover {
     .prac-block {
         margin-top: 14px;
     }
-    .prac-block:nth-last-child(2) {
+    /* .prac-block:nth-last-child(2) {
         width: 299px;
         height: 560px;
         background-color: #00000031;
@@ -747,7 +747,7 @@ button:hover {
         width: 190px;
         height: 52px;
         border-radius: 25px;
-    }
+    } */
    .pracing-container p.source-sans-pro {
        margin: 0px 59px;
        margin-top: 41px;
@@ -857,7 +857,7 @@ button:hover {
         margin-left: 0px;
     }
 }
-@media screen and (max-width: 376px) {
+@media screen and (max-width: 410px) {
     html {
         font-size: 13px ;
     }
