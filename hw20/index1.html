@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let userName = 'Admin';
+        let userPassword = 'passw0rd';
+        function login() {
+            let logInWindow = prompt ('Enter user name or e-mail:');
+            if (logInWindow === null || undefined) {
+                alert('Cancel');
+                login();
+            } else if (logInWindow != userName) {
+                alert('User name dont exist');
+                login();
+            } else if (logInWindow == userName) {
+                passCheck()
+            }
+        }
+        function passCheck(){
+            let enterPassword = prompt ('Enter password')
+            if (enterPassword == userPassword) {
+                alert('Welcome home!');
+            } else if (enterPassword === null || undefined){
+                alert('Cancel');
+                passCheck()
+            }  
+            else if (enterPassword !=userPassword) {
+                alert('Wrong password');
+                passCheck()
+            } 
+        }
+        login()
+    </script>
+</body>
+</html>

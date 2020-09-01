@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const users = {
+            admin: 'passw0rd',
+            moderator: 'm0derator',
+            user1: 'user1pass',
+            user2: 'user2pass',
+        }
+        function login (){
+            let enteredUsername = prompt('Enter your username or e-mail:')
+            for (const data in users) {
+                let userName = data;
+                let userPassword = users[data];
+                if (enteredUsername == userName){
+                    checkResult = 1;
+                    function passCheck(){
+                        enteredPass = prompt('Enter your password:')
+                        if (enteredPass ==  userPassword){
+                            alert('Suxess');
+                            alert('Greatings!')
+                        } else if (!enteredPass) {
+                            alert('Cancel!')
+                        } else if(enteredPass != userPassword){
+                            alert('Wrong password!')
+                            passCheck()
+                        } 
+                    }
+                    passCheck()
+                }
+            }
+            if(!enteredUsername) {
+                alert('Cancel')
+                }
+            if(!checkResult) {
+                alert('Username dont exist!')
+                login()
+            }
+        }
+        login()
+    </script>
+</body>
+</html>
