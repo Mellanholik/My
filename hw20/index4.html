@@ -34,18 +34,13 @@
                     }
                     passCheck()
                     break
-                }
-                else if(enteredUsername == null || undefined) {
+                } 
+                if(!enteredUsername){
                     alert('Cancel')
                     break
                 }
-                else if(enteredUsername != userName) {
-                    alert('Username dont exist!')
-                    login()
-                    
             }
-            }
-                }
+        }
 
         login()
     </script>
