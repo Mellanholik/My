@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const users = {
+    admin: 'passw0rd',
+    moderator: 'm0derator',
+    user1: 'user1pass',
+    user2: 'user2pass',
+}
+
+let login = prompt("Enter login");
+let message;
+if (login === null) {
+  message = "Canceled";
+}
+else {
+    for (var i in users) {
+        if (login === i) {
+      var password = prompt(`Enter you password, ${login}`);
+            
+       if (password === users[i]) {
+         message = `Welcome Home, ${login}!`;
+       }
+       else if (password === null){
+         message = "Canceled";
+       }
+       else {
+         message = "Wrong password";
+       }
+       break;
+     }
+   }
+    if (!message)
+     message = "Access denied"
+  }
+  alert(message) 
+    </script>
+</body>
+</html>
