@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const users = {
+            admin: 'passw0rd',
+            moderator: 'm0derator',
+            user1: 'user1pass',
+            user2: 'user2pass',
+        }
+
+        let login = prompt("Enter")
+        let mass
+        if (login === null){
+            mass = "Cancel"
+        } else {
+            for (var data in users) {
+                if (login === data) {
+                    var passCheck = prompt(`Enter pass, ${login}`)
+
+                    if (passCheck === users[data]){
+                        mass = `Welcome Home, ${login}!`
+                    } 
+                    else if(passCheck == null){
+                        mass = "Canceled"
+                    }
+                    else{
+                        mass = "Wrong pass!"
+                    }
+                }
+            }
+            if (!mass) {
+            mass = "Access denied"
+            }
+            alert(mass);
+            }
+    </script>
+</body>
+</html>

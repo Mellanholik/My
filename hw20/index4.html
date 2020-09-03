@@ -15,11 +15,15 @@
         }
         function login (){
             let enteredUsername = prompt('Enter your username or e-mail:')
+            if(!enteredUsername) {
+                alert('Cancel')
+                }
+            let checkResult = ''
             for (const data in users) {
                 let userName = data;
                 let userPassword = users[data];
                 if (enteredUsername == userName){
-                    checkResult = 1;
+                    checkResult = '1';
                     function passCheck(){
                         enteredPass = prompt('Enter your password:')
                         if (enteredPass ==  userPassword){
@@ -33,16 +37,13 @@
                         } 
                     }
                     passCheck()
-                }
-            }
-            if(!enteredUsername) {
-                alert('Cancel')
-                }
-            if(!checkResult) {
+                }   
+                if(!checkResult){
                 alert('Username dont exist!')
                 login()
+                }
+                }
             }
-        }
         login()
     </script>
 </body>
