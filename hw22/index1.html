@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    // checkSpam('get new Sex videos'); // true
+    // checkSpam('[SPAM] How to earn fast money?'); // true
+    // checkSpam('New PSD template'); // false
+        let checkSpam = message => {
+            let checkingString = message.toLowerCase(message.indexOf())
+            if (checkingString.indexOf('sex') >= 0 || checkingString.indexOf('spam') >= 0 ) {
+                checkIndex = true
+            } else {
+                checkIndex = false
+            }
+            return checkIndex
+        }
+        console.log(checkSpam('get new  videos'))
+    </script>
+</body>
+</html>
