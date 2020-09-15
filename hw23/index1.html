@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const tasksCompleted = {
+    'Serg': 29,
+    'Maryna': 35,
+    'Elena': 1,
+    'Anton': 99
+    };
+    let maxNumbeInObject = Math.max.apply(null, Object.values(tasksCompleted))
+    massage = ' '
+    for (let index = 0; index < Object.keys(tasksCompleted).length; index++) {
+        const element = Object.values(tasksCompleted)[index];
+        if (element === maxNumbeInObject){
+            massage = Object.keys(tasksCompleted)[index]
+            break
+        }
+    }
+    alert(massage)
+    </script>
+</body>
+</html>
