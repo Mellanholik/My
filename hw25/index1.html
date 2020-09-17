@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var vasya = { name: 'Вася', age: 23};
+        var masha = { name: 'Маша', age: 18};
+        var dima = { name: 'Дима', age: 6};
+        var lena = { name: 'Лена', age: 14};
+        var petya = { name: 'Петя', age: 18};
+        var anton = { name: 'Антон', age: 9};
+        var vovochka = { name: 'Вовочка', age: 25};
+
+        var people = [ vasya , masha , vovochka, dima, lena, petya, anton ];
+        function peopleAgeSortFunction(arr) {
+            return people.sort(function sortByAge(a, b) {
+                return a.age - b.age
+                // return 0.5 - Math.random()
+            })
+        }
+        console.log(peopleAgeSortFunction(people))
+        console.log(people[0].age) // 6
+    </script>
+</body>
+</html>

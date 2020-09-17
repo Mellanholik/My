@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function isPal(params) {
+            let truelyIndex = false;
+            let string = params.toLowerCase().split('')
+            for (let index = 0; index < string.length; index++) {
+                if(string[index] == " "){
+                    string.splice(index, 1)
+                }
+            }
+            let newArr = []
+            let tempArr = Object.assign(newArr, string)
+            if(newArr.reverse().join('') === string.join('')){
+                truelyIndex = true
+            }
+            return truelyIndex
+        };
+        console.log(isPal('Anna')); // true
+        console.log(isPal('Я несу гусеня')); //true
+        console.log(isPal('Вася')); //false
+        console.log(isPal('12321')); //true
+        console.log(isPal('123212')); //false
+    </script>
+</body>
+</html>
