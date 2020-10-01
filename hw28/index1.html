@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function blindSniper (line, column){
+            let target = [];
+            let targetString = '';
+            for (let index = 0; index < line; index++) {
+                targetString += '#'
+            }
+            for (let index = 0; index < column; index++) {
+                target[index] = targetString;
+            }
+            let drawTarget = target.join('\n')
+            let random = Math.floor(Math.random() * drawTarget.length)
+            let drowSumbolOnTarget = () =>{
+                let g = drawTarget.split('')
+                let b = g[random] == '\n' ? g[random - 1] = '$' : g[random] = '$'
+                return g.join('');
+            }
+            let finalTarget = drowSumbolOnTarget(); 
+            let i = 0
+            let shoot = () => {
+                let random2 = Math.floor(Math.random() * drawTarget.length);
+                let g = finalTarget.split('');
+                if(g[random2] != '\n' && g[random2] != '$'){
+                    g[random2] = '*'
+                } else if(g[random2] == '\n'){
+                    if (g[random2 - 1] == '$'){
+                        g[random2 - 1] = 'X'
+                        console.clear()
+                        console.log(`Number of your tries = ${i}`)
+                        clearInterval(intervaId)
+                    } else {
+                        g[random2 - 1] = '*'
+                    }
+                }
+                if(g[random2] == '$') {
+                    g[random2] = 'X'
+                }
+                if (g[random2] != 'X'){
+                    i++
+                    console.clear()
+                } else if (g[random2] == 'X' || g[random2 - 1] == 'X') {
+                    console.clear()
+                    console.log(`Number of your tries = ${i}`)
+                    clearInterval(intervaId)
+                }
+                console.log(g.join(''))
+                
+            }
+            let intervaId = setInterval(shoot, 500)
+        }
+        blindSniper(4, 4);
+    </script>
+</body>
+</html>
