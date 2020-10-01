@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let a = [];
+        c = 0
+        function calc () {
+            let b = prompt ('Enter your number')
+            if (b > 0 || b === '0') {
+                a.push(Number(b))
+                calc ()
+            } else {
+                for (let index = 0; index < a.length; index++) {
+                c += a[index]
+                }
+                alert(c)
+            }
+            return c
+        }
+        console.log(calc ())
+        
+    </script>
+</body>
+</html>
