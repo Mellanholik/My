@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let firstNameByMonth = ["The Evil", "The Vile", "The Cruel", "The Trashy", "The Despicable", "The Embarrassing", "The Embarrassing", "The Disreputable", "The Atrocious",  "The Twirling", "The Orange", "The Orange", "The Terrifying", "The Awkward"];
+        let secondNameByDate = ["Mustache", "Pickle", "Recycling Bin", "Potato", "Tomato", "House Cat", "Teaspoon", "Laundry Basket"];
+        let b = '10'
+        let a = 'January '
+        let date1 = new Date(`${a}, ${b}`)
+        function g(h) {
+            return firstNameByMonth[date1.getMonth()] + ' ' + secondNameByDate[String(date1.getDate()).length == 1 ? date1.getDate() : String(date1.getDate())[1]];
+        }
+        console.log(g(date1))
+    </script>
+</body>
+</html>
