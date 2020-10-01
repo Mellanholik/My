@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const obj = {};
+        function addPropf(objName){
+            return function (objKey, objKeyValue){
+                return objName[objKey] = objKeyValue
+            }
+        }
+
+        const addProp = addPropf(obj);
+        addProp('name', 'Nick')
+        addProp('age', 25);
+        console.log(obj)
+        for (let index = 0; index < array.length; index++) {
+            const element = array[index];
+            
+        }
+    </script>
+</body>
+</html>

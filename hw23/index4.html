@@ -8,10 +8,25 @@
 <body>
     <script>
         const obj = {
-            className: 'open menu'
+            className: 'open menu menu'
         };
-        let a = className.splite(' ')
-        console.log(a)
+        console.log(obj.className)
+        function removeClass (a, text){
+            let checker = a.className
+            checker = checker.split(' ')
+            for(i = 0; i < checker.length; i++){
+                if(checker[i] == text){
+                    checker[i] = ''
+                }
+            }
+            checker = checker.join('')
+            checker = checker.replace(/\s/g, '')
+            return  a.className  = checker
+            
+        }
+        removeClass(obj, 'menu')
+        // removeClass(obj, 'blabla')
+        console.log(obj)
 
     </script>
 </body>

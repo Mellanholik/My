@@ -7,9 +7,12 @@
 </head>
 <body>
     <script>
-        let a = 'asdasdasd';
-        a = '#' 
-        console.log(a)
+        function papa(a){
+            return function(b){
+                return b + a
+            }
+        }
+        console.log(papa(5)(8));
     </script>
 </body>
 </html>
