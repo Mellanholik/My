@@ -1,0 +1,28 @@
+.middle-box {
+    display: flex;
+    max-width: 1000px;
+    height: 600px;
+    margin: auto;
+    justify-content: center;
+    align-items: center ;
+}
+.slider-box {
+    display: flex;
+    overflow: hidden;
+}
+.center-text {
+    flex-shrink: 0;
+    width: 100%;
+}
+.center-text1{
+    transition-property: margin-left;
+    transition-duration: 1s;
+}
+.slider-box p {
+    width: 94%;
+    color: rgb(126, 86, 150);
+    font-size: 35px;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: justify;
+}
