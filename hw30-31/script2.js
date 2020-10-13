@@ -12,15 +12,14 @@ if(modeValume == 'loop') {
         }
         sliderBlok.style.marginLeft = `-${marginLeftValume2}px`
         marginLeftValume2 += marginLeftValume
-        i++
     }, timeoutValume)
 } else {
     let id = setInterval(() => {
-        sliderBlok.style.marginLeft = `-${marginLeftValume2}px`
-        marginLeftValume2 += marginLeftValume
-        i++
-        if (marginLeftValume2 == (marginLeftValume * document.getElementsByClassName('center-text').length)) {
+        if (marginLeftValume2 == (marginLeftValume * (document.getElementsByClassName('center-text').length - 1))) {
             clearInterval(id)
         }
+        sliderBlok.style.marginLeft = `-${marginLeftValume2}px`
+        marginLeftValume2 += marginLeftValume
+        console.log(marginLeftValume2 == (marginLeftValume * (document.getElementsByClassName('center-text').length - 1)))
     }, timeoutValume)
 }

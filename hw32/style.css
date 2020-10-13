@@ -28,4 +28,7 @@
 }
 button{
     width: 20.33px;
+    cursor: pointer;
+    background-color: white;
+    font-size: 30px;
 }

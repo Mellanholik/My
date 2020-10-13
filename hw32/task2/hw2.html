@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/830caa0892.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="hw2.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main-conteiner">
+        <header>
+            <div class="conteiner-header c-width">
+                <div class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="43" height="41">
+                        <path fill="#8D81AC" fill-rule="evenodd" d="M43.003 20.98c.008.375-.127.72-.38.974l-3.763 3.788.039 8.759c-.022.065-.043.148-.053.247.002-.021.005-.039 0-.027-.015.048-.028.094-.039.141-.015.042-.028.084-.038.123-.012.047-.021.094-.037.14l-.028.053c-.026.057-.053.112-.084.166l-.034.048c-.04.059-.085.114-.125.157l-.061.053c-.055.05-.109.1-.153.131-.027.017-.057.03-.085.044l-.182.1c-.16.064-.325.096-.491.096l-3.146.019c-.359 0-.695-.137-.944-.383s-.386-.574-.386-.926c0-.721.587-1.285 1.336-1.285h1.807l.002-8.091c-.006-.118.002-.263.019-.362l.018-.065c.016-.065.03-.13.064-.211.073-.182.193-.349.355-.494l3.223-3.228-2.9-2.901-.156-.125c-.319-.204-.537-.537-.604-.952-.019-.094-.026-.206-.019-.333l.001-7.981h-1.808c-.737 0-1.336-.595-1.336-1.327-.001-.354.137-.687.389-.937.251-.251.587-.389.942-.389l3.128.002.073-.001c.16.006.315.04.439.093.036.021.073.042.102.057l.056.028c.032.016.065.03.097.051.058.038.108.086.158.133.021.02.043.038.066.057.042.044.082.095.118.146l.041.06c.027.044.052.095.077.147.012.029.027.058.042.086.017.048.03.098.044.149.012.046.028.091.047.138.006.028.011.056.013.081.009.096.03.178.052.244l-.039 8.688 3.751 3.788c.264.265.403.615.392 1.031zM28.371 9.277c.008.088.009.155.004.213-.005.061-.018.132-.044.224l-.021.077-2.251 25.988c-.013.256-.096.494-.257.716l-.029.036c-.059.073-.111.128-.159.17l-4.658 3.995c-.231.199-.513.304-.815.304-.377 0-.731-.168-.976-.466-.018-.023-.031-.048-.047-.073l-3.855-4.673c-.233-.281-.33-.645-.275-1.024l2.933-33.521c.009-.04.017-.081.023-.118l.012-.079.006-.042c.012-.028.023-.056.031-.082.016-.045.031-.092.054-.147l.032-.054c.027-.048.061-.106.097-.157l.031-.037c.053-.062.099-.111.13-.141l.061-.046c.054-.043.109-.088.163-.117l.154-.074c.027-.013.053-.028.077-.037.046-.016.095-.027.147-.037.059-.012.118-.03.18-.054l.063-.009L19.25 0l8.566.818.098.004c.226 0 .459.152.613.278.329.273.504.692.467 1.117l-.63 6.981.007.079zM17.629 33.778l6.012.531 2.051-23.763-6.011-.532-2.052 23.764zm2.706-31.022l-.423 4.68 6.011.53.422-4.679-6.01-.531zM6.741 24.669c.034.081.048.146.064.211l.018.065c.017.099.025.244.019.362l.002 8.091h1.807c.749 0 1.336.564 1.336 1.285 0 .352-.137.68-.385.926-.25.246-.586.383-.945.383l-3.146-.019c-.166 0-.331-.032-.491-.096l-.182-.1c-.028-.014-.058-.027-.085-.044-.044-.031-.098-.081-.153-.131l-.061-.053c-.04-.043-.084-.098-.125-.157l-.034-.048c-.031-.054-.058-.109-.084-.166l-.028-.053c-.016-.046-.025-.093-.037-.14-.01-.039-.023-.081-.038-.123-.011-.047-.024-.093-.039-.141-.005-.012-.002.006 0 .027-.01-.099-.031-.182-.053-.247l.039-8.759-3.763-3.788c-.253-.254-.388-.599-.38-.974-.011-.416.128-.766.392-1.031l3.751-3.788-.039-8.688c.022-.066.043-.148.052-.244.002-.025.007-.053.013-.081.019-.047.035-.092.047-.138.014-.051.027-.101.044-.149.015-.028.03-.057.042-.086.025-.052.05-.103.077-.147l.041-.06c.036-.051.076-.102.118-.146.023-.019.045-.037.066-.057.05-.047.1-.095.158-.133.032-.021.065-.035.097-.051l.056-.028.103-.057c.123-.053.278-.087.438-.093l.073.001 3.128-.002c.355 0 .691.138.942.389.252.25.39.583.389.937 0 .732-.599 1.327-1.336 1.327H6.841l.001 7.981c.007.127 0 .239-.019.333-.067.415-.285.748-.604.952l-.156.125-2.9 2.901 3.223 3.228c.162.145.282.312.355.494z"/>
+                    </svg>
+                    <p class="lato">FORK<span>IO</span></p>
+                </div>
+                <nav class="montserrat">
+                    <i class="fas fa-bars clik-for-show-menu" ></i>
+                    <ul class="hidden-menu">
+                        <li><a href="">Overview</a></li>
+                        <li><a href="">About Fork</a></li>
+                        <li><a href="">Buying Options</a></li>
+                        <li><a href="">Support</a></li>
+                    </ul>
+                </nav>
+                <div class="container-header__bottom-bg"></div>
+                <div class="container-header__bottom-bg2"></div>
+                <button class="montserrat no-shadow">Buy Now</button>
+            </div>
+        </header>
+        <div class="underheader">
+            <div class="container c-width">
+                <div class="box1">
+                    <h1 class="montserrat">Fork App</h1>
+                    <p class="lato">A real gamechanger in the world of web development</p>
+                    <p class="montserrat">v. 2.8 For Mac and Windows</p>
+                </div>
+                <div class="button">
+                    <button>Download For Free Now</button>
+                    <p class="montserrat">Unlimited 30-Days Trial Period</p>
+                </div>
+            </div>
+        </div>
+        <div class="inform-container">
+            <div class="container-inf inf-width2">
+                <h1 class="montserrat">Revolutionary editor</h1>
+                <p class="source-sans-pro margin-bottom">
+                    Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. 
+                </p>
+            </div>
+        </div>
+        <div class="index-container montserrat">
+            <div class="in-container">
+                <div class="left-side">
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="icon@3x.png" alt="" class="img1">
+                        </div>
+                        <div class="text-box">
+                            <h4>Creatred to Make The Web Better</h4>
+                            <p>Aenean cursus imperdiet nisl id fermentum. Aliquam pharetra dui laoreet vulputate dignissim. Sed id metus id quam auctor molestie eget ut augue. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="icon2@3x.png" alt="" class="img2">
+                        </div>
+                        <div class="text-box">
+                            <h4>Incredibly Powerful Tool</h4>
+                            <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="icon3@3x.png" alt="" class="img3">
+                        </div>
+                        <div class="text-box">
+                            <h4>Experimental Stuff</h4>
+                            <p>Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="img-box">
+                            <img src="icon4@3x.png" alt="" class="img4">
+                        </div>
+                        <div class="text-box">
+                            <h4>Creatred to Make The Web Better</h4>
+                            <p class="last">Maecenas eu dictum felis, a dignissim nibh. Mauris rhoncus felis odio, ut volutpat massa placerat ac. Curabitur dapibus iaculis mi gravida luctus. Aliquam erat volutpat. </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="right-side">
+                    <h1>&lt;Here is what you get&gt;</Here></h1>
+                </div>
+                <div class="img">
+                    <img src="editor@3x.png" alt="">
+                </div>
+            </div>
+        </div>
+        <div class="inform-container height1">
+            <div class="container-inf inf-width">
+                <div class="top-box">
+                    <div class="position-icon">
+                        <a href=""><img src="usirpic.jpg" alt=""></a>
+                    </div>
+                    <div class="icon-text montserrat">
+                        <h3>Steven Strange</h3>
+                        <a href="">@DoctorS</a>
+                    </div>
+                </div>
+                <div class="middle-box">
+                    <div class="left-button">
+                        <button><i class="fas fa-chevron-left"></i></button>
+                    </div>
+                    <div class="center-text">
+                        <p class="source-sans-pro"><a href="">@Pixelbuddha</a> Suspendisse sodales sem est, in scelerisque felis scelerisque in. Aenean faucibus mollis risus. Praesent sit amet erat eget eros.</p>
+                        <p class="content-p">2 hours ago</p>
+                    </div>
+                    <div class="rigth-button">
+                        <button><i class="fas fa-chevron-right"></i></button>
+                    </div>
+                </div>
+                <div class="bottom-box">
+                    <div class="gihub">
+                        <button><i class="fab fa-github"></i>GitHub</button>
+                        <p>7 352 Followers</p>
+                    </div>
+                    <div class="twitter">
+                        <button><i class="fab fa-twitter"></i>Twitter</button>
+                        <p>136 312 Followers</p>
+                    </div>
+                    <div class="facebook">
+                        <button><i class="fab fa-facebook-f"></i>Facebook</button>
+                        <p>218 092 Subscribers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bgcolor">
+            <div class="review">
+                <h1 class="montserrat">People Are Talking About Fork</h1>
+                <div class="review-text">
+                    <div class="review-box source-sans-pro ">
+                        <img src="logo.png" alt="" class="logo1" width="165px" height="43px">
+                        <p>
+                            Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. 
+                        </p>
+                    </div>
+                    <div class="review-box source-sans-pro">
+                        <img src="logo2.png" alt="" class="logo2" width="148px" height="50px">
+                        <p>
+                            Donec euismod dolor ut ultricies consequat. Vivamus urna ipsum, rhoncus molestie neque ac, mollis eleifend nibh.
+                        </p>
+                    </div>
+                    <div class="review-box source-sans-pro">
+                        <img src="logo3.png" alt="" class="logo3" width="64px" height="64px">
+                        <p>
+                            In efficitur in velit et tempus. Duis nec odio dapibus, suscipit erat fringilla, imperdiet nibh. Morbi tempus auctor felis ac vehicula. 
+                        </p>
+                    </div>
+                    <div class="review-box source-sans-pro">
+                        <div class="inline-img-block">
+                            <img src="4-1.png" alt="" class="logo4-2">
+                            <img src="2.png" alt="" class="logo4-1">
+                        </div>
+                        <p>
+                            Sed vestibulum scelerisque urna, eu finibus leo facilisis sit amet. Proin id dignissim magna. Sed varius urna et pulvinar venenatis. 
+                        </p>
+                    </div>
+                    <div class="review-box source-sans-pro">
+                        <img src="logo5.png" alt="" class="logo5" width="166px" height="34px">
+                        <p>
+                            Praesent ut eros tristique, malesuada lectus vel, lobortis massa. Nulla faucibus lorem id arcu consequat faucibus. 
+                        </p>
+                    </div>
+                    <div class="review-box source-sans-pro">
+                        <img src="logo6.png" alt="" class="logo6" width="108px" height="34px">
+                        <p>
+                            Fusce pharetra erat id odio blandit, nec pharetra eros venenatis. Pellentesque porttitor cursus massa et vestibulum.
+                        </p>
+                    </div>
+                </div>
+                <div class="bottom-border"></div>
+            </div>
+            <div class="pracing montserrat">
+                <div class="pracing-container">
+                    <h1>Fork Subscription Pricing</h1>
+                    <div class="pracing-container__prac-blocks">
+                        <div class="prac-block">
+                            <h4>Students</h4>
+                            <h3>$29</h3>
+                            <p class="prac-block--gray">per month</p>
+                            <p class="prac-block--option">Personal License</p>
+                            <div class="prac-block__line"></div>
+                            <button>purchase</button>
+                        </div>
+                        <div class="prac-block">
+                            <h4>professional</h4>
+                            <h3>$59</h3>
+                            <p class="prac-block--gray">per month</p>
+                            <p class="prac-block--option">Professional License
+                                Email Support</p>
+                            <div class="prac-block__line"></div>
+                            <button>purchase</button>
+                        </div>
+                        <div class="prac-block">
+
+                            <h4>agency</h4>
+                            <h3>$99</h3>
+                            <p class="prac-block--gray">per month</p>
+                            <p class="prac-block--option"> 1-12 Team Members
+                                Phone Support</p>
+                            <div class="prac-block__line"></div>
+                            <button>purchase</button>
+
+                        </div>
+                        <div class="prac-block">
+                            <h4>enterprise</h4>
+                            <h3>$159</h3>
+                            <p class="prac-block--gray">per month</p>
+                            <p class="prac-block--option">Unlimited Team Members
+                                    24/ 7 Phone Support</p>
+                            <div class="prac-block__line"></div>
+                            <button>purchase</button>
+                        </div>
+                    </div>
+                    <p class="source-sans-pro">
+                        Duis lobortis arcu sed arcu tincidunt feugiat. Nulla nisi mauris, facilisis vitae aliquet id, imperdiet quis nibh. Donec eget elit eu libero tincidunt consequat nec elementum orci. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus.  
+                    </p>
+                </div>
+            </div>
+        </div>
+        <div class="new-and-sub">
+            <div class="new-and-sub__subscribe-bacground">
+                <div class="subscribe-bacground__subscribe-box montserrat">
+                    <h1>Subscribe To Our Newsletter</h1>
+                    <div class="subscribe-box__email">
+                        <input type="email" class="sub-inpute" placeholder="Email...">
+                        <button class="sub-button">
+                            Subscribe
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="news-and-sub__news montserrat">
+                <div class="news-and-sub__news--new news-and-sub__news--fonts">
+                    <h2>
+                        New in Release 2.8
+                    </h2>
+                    <h3>
+                        Fully Available: Live Preview Support for Multiple Browsers
+                    </h3>
+                    <p>
+                        Morbi faucibus ante ipsum, a tincidunt libero posuere et. Etiam tempor tortor at odio condimentum, sit amet fringilla ligula maximus. Mauris venenatis nisl nisi, et dictum dui aliquet nec. Sed erat, nec aliquam vel, aliquam ac felis. 
+                    </p>
+                    <h3>
+                        Improved Support for Typing 
+                    </h3>
+                    <p>
+                        Nulla purus quam, pulvinar sed ante et, feugiat maximus velit. Donec eu elit mauris. 
+                    </p>
+                    <h3>
+                        Improved Stability
+                    </h3>
+                    <p>
+                        Proin id ligula eget massa tincidunt molestie. Morbi urna lectus, molestie vel quam vel, iaculis fermentum nunc. Morbi imperdiet, leo in interdum pretium.
+                    </p>
+                    <button class="sub__news__button">
+                        Go to Release Log
+                    </button>
+                </div>
+                <div class="news-and-sub__news--popylar news-and-sub__news--fonts">
+                    <h2>Popular Extensions</h2>
+                    <a href="">
+                        Custom Themes 1.1
+                    </a>
+                    <p>
+                        Etiam viverra vulputate diam, pulvinar cursus augue egestas ullamcorper. 
+                    </p>
+                    <a href="">
+                        Filter Forge
+                    </a>
+                    <p>
+                        Nulla purus quam, pulvinar sed et, feugiat maximus velit.
+                    </p>
+                    <a href="">
+                        WebZap
+                    </a>
+                    <p>
+                        Morbi imperdiet, leo in interdum pretium, elit eros dapibus velit, eu posuere quam diam vitae orci. Suspendisse interdum accumsan magna vitae commodo.
+                    </p>
+                    <a href="">
+                        Renamy
+                    </a>
+                    <p>
+                        Vivamus consectetur suscipit elit, ut lacinia diam elementum et.
+                    </p>
+                    <button class="sub__news__button">
+                        Go to Marketplace
+                    </button>
+                </div>
+                <div class="news-and-sub__news--blog news-and-sub__news--fonts">
+                    <h2>New From the Blog</h2>
+                    <a href="">
+                        Morbi imperdiet, leo in interdum pretium.
+                    </a>
+                    <p>
+                        February 18, 2015
+                    </p>
+                    <a href="">
+                        Donec orci ante, porta vel nulla quis, aliquet hendrerit leo.
+                    </a>
+                    <p>
+                        February 12, 2015
+                    </p>
+                    <a href="">
+                        Suspendisse egestas vulputate luctus.
+                    </a>
+                    <p>
+                        February 6, 2015
+                    </p>
+                    <a href="">
+                        Quisque varius ante lorem, eget pretium purus hendrerit a egestas. 
+                    </a>
+                    <p>
+                        February 2, 2015
+                    </p>
+                    <a href="">
+                        Phasellus in augue risus. 
+                    </a>
+                    <p>
+                        January 23, 2015
+                    </p>
+                    <button class="sub__news__button">
+                        Go to Blog
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <footer>
+            <div class="footer-container">
+                <div class="footer-container__inf">
+                    <div class="footer-container__inf__logo">
+                        <div class="logo">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="43" height="41">
+                                <path fill="#8D81AC" fill-rule="evenodd" d="M43.003 20.98c.008.375-.127.72-.38.974l-3.763 3.788.039 8.759c-.022.065-.043.148-.053.247.002-.021.005-.039 0-.027-.015.048-.028.094-.039.141-.015.042-.028.084-.038.123-.012.047-.021.094-.037.14l-.028.053c-.026.057-.053.112-.084.166l-.034.048c-.04.059-.085.114-.125.157l-.061.053c-.055.05-.109.1-.153.131-.027.017-.057.03-.085.044l-.182.1c-.16.064-.325.096-.491.096l-3.146.019c-.359 0-.695-.137-.944-.383s-.386-.574-.386-.926c0-.721.587-1.285 1.336-1.285h1.807l.002-8.091c-.006-.118.002-.263.019-.362l.018-.065c.016-.065.03-.13.064-.211.073-.182.193-.349.355-.494l3.223-3.228-2.9-2.901-.156-.125c-.319-.204-.537-.537-.604-.952-.019-.094-.026-.206-.019-.333l.001-7.981h-1.808c-.737 0-1.336-.595-1.336-1.327-.001-.354.137-.687.389-.937.251-.251.587-.389.942-.389l3.128.002.073-.001c.16.006.315.04.439.093.036.021.073.042.102.057l.056.028c.032.016.065.03.097.051.058.038.108.086.158.133.021.02.043.038.066.057.042.044.082.095.118.146l.041.06c.027.044.052.095.077.147.012.029.027.058.042.086.017.048.03.098.044.149.012.046.028.091.047.138.006.028.011.056.013.081.009.096.03.178.052.244l-.039 8.688 3.751 3.788c.264.265.403.615.392 1.031zM28.371 9.277c.008.088.009.155.004.213-.005.061-.018.132-.044.224l-.021.077-2.251 25.988c-.013.256-.096.494-.257.716l-.029.036c-.059.073-.111.128-.159.17l-4.658 3.995c-.231.199-.513.304-.815.304-.377 0-.731-.168-.976-.466-.018-.023-.031-.048-.047-.073l-3.855-4.673c-.233-.281-.33-.645-.275-1.024l2.933-33.521c.009-.04.017-.081.023-.118l.012-.079.006-.042c.012-.028.023-.056.031-.082.016-.045.031-.092.054-.147l.032-.054c.027-.048.061-.106.097-.157l.031-.037c.053-.062.099-.111.13-.141l.061-.046c.054-.043.109-.088.163-.117l.154-.074c.027-.013.053-.028.077-.037.046-.016.095-.027.147-.037.059-.012.118-.03.18-.054l.063-.009L19.25 0l8.566.818.098.004c.226 0 .459.152.613.278.329.273.504.692.467 1.117l-.63 6.981.007.079zM17.629 33.778l6.012.531 2.051-23.763-6.011-.532-2.052 23.764zm2.706-31.022l-.423 4.68 6.011.53.422-4.679-6.01-.531zM6.741 24.669c.034.081.048.146.064.211l.018.065c.017.099.025.244.019.362l.002 8.091h1.807c.749 0 1.336.564 1.336 1.285 0 .352-.137.68-.385.926-.25.246-.586.383-.945.383l-3.146-.019c-.166 0-.331-.032-.491-.096l-.182-.1c-.028-.014-.058-.027-.085-.044-.044-.031-.098-.081-.153-.131l-.061-.053c-.04-.043-.084-.098-.125-.157l-.034-.048c-.031-.054-.058-.109-.084-.166l-.028-.053c-.016-.046-.025-.093-.037-.14-.01-.039-.023-.081-.038-.123-.011-.047-.024-.093-.039-.141-.005-.012-.002.006 0 .027-.01-.099-.031-.182-.053-.247l.039-8.759-3.763-3.788c-.253-.254-.388-.599-.38-.974-.011-.416.128-.766.392-1.031l3.751-3.788-.039-8.688c.022-.066.043-.148.052-.244.002-.025.007-.053.013-.081.019-.047.035-.092.047-.138.014-.051.027-.101.044-.149.015-.028.03-.057.042-.086.025-.052.05-.103.077-.147l.041-.06c.036-.051.076-.102.118-.146.023-.019.045-.037.066-.057.05-.047.1-.095.158-.133.032-.021.065-.035.097-.051l.056-.028.103-.057c.123-.053.278-.087.438-.093l.073.001 3.128-.002c.355 0 .691.138.942.389.252.25.39.583.389.937 0 .732-.599 1.327-1.336 1.327H6.841l.001 7.981c.007.127 0 .239-.019.333-.067.415-.285.748-.604.952l-.156.125-2.9 2.901 3.223 3.228c.162.145.282.312.355.494z"/>
+                            </svg>
+                            <p class="lato">FORK<span>IO</span></p>
+                        </div>
+                        <p class="montserrat">
+                            Lorem ipsum dolor sit amet, feugiat delicat liberavisse id cum no quo.
+                        </p>
+                    </div>
+                    <div class="footer-container__inf__nav montserrat">
+                        <ul><h3>Navigation</h3>
+                            <li><a href="">Home</a></li>
+                            <li><a href="">Overview</a></li>
+                            <li><a href="">About</a></li>
+                            <li><a href="">Buying Options</a></li>
+                            <li><a href="">Support</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-container__inf__contacts montserrat">
+                        <h2>347 567 78 90</h2>
+                        <p class="to_h2">AVAILABLE FROM 12PM - 18PM</p>
+                        <h3>New York, NY</h3>
+                        <p class="to_h3">
+                            560 Judah St & 15th Ave, Apt 5
+                            San Francisco, CA, 230903
+                        </p>
+                    </div>
+                    <div class="footer-container__inf__about-us montserrat">
+                        <h3>Info</h3>
+                        <p>
+                            Wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex commodo consequat. Autem vel hendrerit iriure dolor in hendrerit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>

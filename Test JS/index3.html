@@ -1,0 +1,48 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    #field {
+      width: 200px;
+      height: 150px;
+      border: 10px solid black;
+      background-color: #00FF00;
+      overflow: hidden;
+      cursor: pointer;
+      position: relative;
+    }
+    #ball {
+      position: absolute;
+      top: 0px;
+      left: 0px;
+      transition: left 500ms, top 500ms;
+    }
+  </style>
+</head>
+
+<body style="height:2000px">
+
+  Нажмите на поле для перемещения мяча.
+  <br> Мяч не должен выходить за границы поля.
+
+
+  <div id="field">
+    <img src="https://ru.js.cx/clipart/ball.svg" id="ball"> . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+    . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .
+  </div>
+  <script>
+      const a = document.getElementById('field');
+      const b = document.getElementById('ball');
+      let left1 = event.clientX - fieldCoords.left - field.clientLeft - ball.offsetWidth/2;
+        let top2 = event.clientY - fieldCoords.left - field.clientLeft - ball.offsetWidth/2;
+      function clikker(){
+        b.style.left = `${left1}px`;
+        b.style.top = `${top2}px`;
+      }
+      a.addEventListener('click', clikker)
+  </script>
+
+</body>
+</html>
